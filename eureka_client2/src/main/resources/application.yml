@@ -1,0 +1,18 @@
+server:
+  port: 9002
+
+spring:
+  application:
+    name: eureka-client02
+
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 10   #过期时间
+    lease-renewal-interval-in-seconds: 5      #心跳时间
+  client:
+    service-url:
+      defaultZone: http://peer1:2001/eureka,http://peer2:2002/eureka    #集群
+
+feign:
+  hystrix:
+    enabled: true     #开启feign的Hystrix支持，默认为false

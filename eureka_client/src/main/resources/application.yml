@@ -1,0 +1,16 @@
+server:
+  port: 9001 # 端口
+
+spring:
+  application:
+    name: eureka-client01 # 应用名称，会在Eureka中显示
+
+eureka:
+  instance:
+    lease-expiration-duration-in-seconds: 10    #10秒过期    默认90
+    lease-renewal-interval-in-seconds: 5       # 5秒一次心跳  默认30
+  client:
+    service-url: # 配置其他Eureka服务的地址，而不是自己
+      defaultZone: http://peer1:2001/eureka,http://peer2:2002/eureka
+
+
