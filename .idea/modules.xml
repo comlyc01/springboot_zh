@@ -8,7 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka_client3/eureka_client3.iml" filepath="$PROJECT_DIR$/eureka_client3/eureka_client3.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka_server/eureka_server.iml" filepath="$PROJECT_DIR$/eureka_server/eureka_server.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka_server2/eureka_server2.iml" filepath="$PROJECT_DIR$/eureka_server2/eureka_server2.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mybatis01/mybatisPuls.iml" filepath="$PROJECT_DIR$/mybatis01/mybatisPuls.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatis01/mybatis01.iml" filepath="$PROJECT_DIR$/mybatis01/mybatis01.iml" />
       <module fileurl="file://$PROJECT_DIR$/rabbitmq/rabbitmq.iml" filepath="$PROJECT_DIR$/rabbitmq/rabbitmq.iml" />
       <module fileurl="file://$PROJECT_DIR$/redis/redis.iml" filepath="$PROJECT_DIR$/redis/redis.iml" />
       <module fileurl="file://$PROJECT_DIR$/timingTask/timingTask.iml" filepath="$PROJECT_DIR$/timingTask/timingTask.iml" />
