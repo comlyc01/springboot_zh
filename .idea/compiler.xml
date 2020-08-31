@@ -7,22 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="timingTask" />
-        <module name="eureka_client" />
+        <module name="zookeeper" />
         <module name="eureka_server2" />
-        <module name="eureka_client2" />
         <module name="eureka" />
-        <module name="eureka_client3" />
-        <module name="eureka_server" />
-        <module name="mybatis01" />
         <module name="zuul" />
         <module name="rabbitmq" />
         <module name="demo" />
         <module name="redis" />
+        <module name="eureka_client" />
+        <module name="eureka_client2" />
+        <module name="eureka_client3" />
+        <module name="eureka_server" />
+        <module name="mybatis01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="demo (1) (com.eureka)" target="1.8" />
+      <module name="dubbo" target="1.8" />
       <module name="eureka" target="1.8" />
       <module name="eureka_client" target="1.8" />
       <module name="eureka_client2" target="1.8" />
@@ -34,6 +36,7 @@
       <module name="redis" target="1.8" />
       <module name="springboot_zh" target="1.8" />
       <module name="timingTask" target="1.8" />
+      <module name="zookeeper" target="1.8" />
       <module name="zuul" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -41,6 +44,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="demo" options="-parameters" />
       <module name="demo (1) (com.eureka)" options="-parameters" />
+      <module name="dubbo" options="-parameters" />
       <module name="eureka" options="-parameters" />
       <module name="eureka_client" options="-parameters" />
       <module name="eureka_client2" options="-parameters" />
@@ -52,6 +56,7 @@
       <module name="redis" options="-parameters" />
       <module name="springboot_zh" options="-parameters" />
       <module name="timingTask" options="-parameters" />
+      <module name="zookeeper" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
