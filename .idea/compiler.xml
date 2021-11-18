@@ -11,12 +11,12 @@
         <module name="zookeeper" />
         <module name="mail" />
         <module name="eureka_server2" />
+        <module name="springboot_zh" />
         <module name="eureka" />
         <module name="zuul" />
         <module name="gecco" />
         <module name="rabbitmq" />
         <module name="quartzDemo" />
-        <module name="demo" />
         <module name="redis" />
         <module name="eureka_client" />
         <module name="eureka_client2" />
@@ -26,7 +26,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="demo" target="1.8" />
       <module name="demo (1) (com.eureka)" target="1.8" />
       <module name="dubbo" target="1.8" />
       <module name="eureka" target="1.8" />
@@ -51,7 +50,6 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="demo" options="-parameters" />
       <module name="demo (1) (com.eureka)" options="-parameters" />
       <module name="dubbo" options="-parameters" />
       <module name="eureka" options="-parameters" />
