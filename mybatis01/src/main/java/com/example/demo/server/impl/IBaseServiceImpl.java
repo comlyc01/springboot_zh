@@ -10,5 +10,4 @@ import org.springframework.stereotype.Service;
 public class IBaseServiceImpl extends ServiceImpl<IBaseMapper, Muser> implements IBaseService {
 
 
-
 }

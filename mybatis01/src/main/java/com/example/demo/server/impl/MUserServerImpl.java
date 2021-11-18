@@ -6,18 +6,21 @@ import com.example.demo.entity.Muser;
 import com.example.demo.server.MUserServer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 import java.util.List;
 
 
 @Service
-public class MUserServerImpl implements MUserServer{
+public class MUserServerImpl implements MUserServer {
 
-    @Autowired
-    private  MUserDao mUserDao;
+    @Resource
+    private MUserDao mUserDao;
 
 
     /**
      * 插入数据
+     *
      * @param muser
      * @return
      */
@@ -29,6 +32,7 @@ public class MUserServerImpl implements MUserServer{
 
     /**
      * 删除数据
+     *
      * @param muserId
      * @return
      */
@@ -40,6 +44,7 @@ public class MUserServerImpl implements MUserServer{
 
     /**
      * 查询列表
+     *
      * @return
      */
     @Override
@@ -50,6 +55,7 @@ public class MUserServerImpl implements MUserServer{
 
     /**
      * 查询全部，xml
+     *
      * @return
      */
     @Override

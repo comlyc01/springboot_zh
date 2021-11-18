@@ -8,7 +8,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 
 
 /**
- * @EnableEurekaClient    只适用于Eureka作为注册中心，
+ * @EnableEurekaClient 只适用于Eureka作为注册中心，
  * @EnableDiscoveryClient 可以是其他注册中心
  */
 @EnableDiscoveryClient   // 开启客户端注册中心

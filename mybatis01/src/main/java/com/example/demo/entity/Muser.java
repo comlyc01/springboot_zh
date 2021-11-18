@@ -7,7 +7,7 @@ import com.baomidou.mybatisplus.annotation.TableName;
 public class Muser {
     @TableId("id")
     private int id;
-    private String  name;
+    private String name;
     private int age;
     private String email;
 

@@ -6,6 +6,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.cache.interceptor.KeyGenerator;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+
 import java.lang.reflect.Method;
 
 /**
@@ -16,7 +17,7 @@ import java.lang.reflect.Method;
 public class RedisConfig extends CachingConfigurerSupport {
 
     @Bean
-    public KeyGenerator keyGenerator(){
+    public KeyGenerator keyGenerator() {
         // 重写KeyGenerator方法
         return new KeyGenerator() {
             @Override

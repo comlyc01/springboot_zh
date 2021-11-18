@@ -17,42 +17,44 @@ public class TopicRabbitConfig {
     /**
      * 队列1
      * queueTest
+     *
      * @return
      */
     @Bean
-    public Queue msg1(){
+    public Queue msg1() {
         return new Queue(TopicRabbitConfig.msg1);
     }
 
     /**
      * 队列2
      * queresTest
+     *
      * @return
      */
     @Bean
-    public Queue msg2(){
+    public Queue msg2() {
         return new Queue(TopicRabbitConfig.msg2);
     }
 
     /**
      * 交换机
+     *
      * @return
      */
     @Bean
-    public TopicExchange exchange(){
+    public TopicExchange exchange() {
         return new TopicExchange("exchangesTest");
     }
 
     @Bean
-    public Binding bindingExchangeMessages1(@Qualifier("msg1") Queue queueMessage, TopicExchange exchange){
+    public Binding bindingExchangeMessages1(@Qualifier("msg1") Queue queueMessage, TopicExchange exchange) {
         return BindingBuilder.bind(queueMessage).to(exchange).with("amp.test1");
     }
 
     @Bean
-    public Binding bindingExchangeMessages2(@Qualifier("msg2") Queue queueMessages,TopicExchange exchange){
+    public Binding bindingExchangeMessages2(@Qualifier("msg2") Queue queueMessages, TopicExchange exchange) {
         return BindingBuilder.bind(queueMessages).to(exchange).with("amp.#");
     }
-
 
 
 }

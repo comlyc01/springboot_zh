@@ -15,7 +15,7 @@ public class ConsumerController {
     private HelloRemote helloRemote;
 
     @RequestMapping("/hello/{name}")
-    public String index(@PathVariable("name")String name){
+    public String index(@PathVariable("name") String name) {
         return helloRemote.Hello(name);
     }
 }

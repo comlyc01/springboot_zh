@@ -2,6 +2,7 @@ package com.rabbitmq.demo.sender;
 
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.stereotype.Component;
+
 import javax.annotation.Resource;
 
 /**

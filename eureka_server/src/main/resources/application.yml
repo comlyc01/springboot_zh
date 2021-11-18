@@ -1,7 +1,6 @@
 server:
   port: 2001
   context-path: /
-
 eureka:
   instance:
     # 单机 hostname: localhost #eureka注册中心实例名称

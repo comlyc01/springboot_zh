@@ -20,59 +20,68 @@ import java.util.Map;
 public class UserController {
 
     @Resource
-    private  MUserServer mUserServer;
+    private MUserServer mUserServer;
 
     /**
      * 插入一条记录
+     *
      * @param muser
      * @return
      */
     @RequestMapping("/insert")
-    public  Map insertDemo(Muser muser){
+    public Map insertDemo(Muser muser) {
         HashMap<String, Object> map = new HashMap<>();
         int muserList = mUserServer.insert(muser);
         System.out.println("muserList = " + muserList);
-        map.put("muserList",muserList);
+        map.put("muserList", muserList);
         return map;
     }
 
     /**
      * 删除（根据ID 批量删除）
+     *
      * @param muserId
      * @return
      */
     @RequestMapping("/delete")
-    public  Map deleteBatchIdsDemo(List muserId){
+    public Map deleteBatchIdsDemo(List muserId) {
         HashMap<String, Object> map = new HashMap<>();
         int deleteCount = mUserServer.deleteBatchIds(muserId);
-        map.put("delete",deleteCount);
+        map.put("delete", deleteCount);
         return map;
     }
 
     /**
      * 查询所有（BaseMapper）
+     *
      * @return
      */
     @RequestMapping("/query")
-    public  Map eqQuery(){
+    public Map eqQuery() {
         HashMap<String, Object> map = new HashMap<>();
         List<Muser> muserList = mUserServer.queryList();
         muserList.forEach(System.out::println);
-        map.put("list",muserList);
+        map.put("list", muserList);
         return map;
     }
 
     /**
      * 查询全部 （xml）
+     *
      * @return
      */
     @RequestMapping("/xmlQuery")
-    public Map xmlQuery(){
+    public Map xmlQuery() {
         HashMap<String, Object> map = new HashMap<>();
         List<Muser> muserList = mUserServer.xmlQuery();
         muserList.forEach(System.out::println);
-        map.put("list",muserList);
-        return  map;
+        map.put("list", muserList);
+        return map;
+    }
+
+
+    public static void main(String[] args) {
+
     }
 
 }

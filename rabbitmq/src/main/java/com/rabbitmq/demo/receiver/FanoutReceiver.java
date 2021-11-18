@@ -15,13 +15,13 @@ public class FanoutReceiver {
 
     @RabbitHandler
     @RabbitListener(queues = "fanout1")   // 监听队列
-    public void fanoutReceiver1(String messages){
+    public void fanoutReceiver1(String messages) {
         System.out.println("【订阅模式】接收者1 = " + messages);
     }
 
     @RabbitHandler
     @RabbitListener(queues = "fanout2")   // 监听队列
-    public void fanoutReceiver2(String messages){
+    public void fanoutReceiver2(String messages) {
         System.out.println("【订阅模式】接收者2 = " + messages);
     }
 }

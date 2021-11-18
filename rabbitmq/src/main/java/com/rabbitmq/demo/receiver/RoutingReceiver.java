@@ -10,13 +10,13 @@ public class RoutingReceiver {
 
     @RabbitHandler
     @RabbitListener(queues = "routing1")
-    public void routingReceiver1(String messages){
+    public void routingReceiver1(String messages) {
         System.out.println("【路由模式】接受者key1 = " + messages);
     }
 
     @RabbitHandler
     @RabbitListener(queues = "routing1")
-    public void routingReceiver2(String messages){
+    public void routingReceiver2(String messages) {
         System.out.println("【路由模式】接受者key2 = " + messages);
     }
 
