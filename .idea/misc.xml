@@ -17,6 +17,8 @@
         <option value="$PROJECT_DIR$/zookeeper/pom.xml" />
         <option value="$PROJECT_DIR$/gecco/pom.xml" />
         <option value="$PROJECT_DIR$/mail/pom.xml" />
+        <option value="$PROJECT_DIR$/schedule/pom.xml" />
+        <option value="$PROJECT_DIR$/hibernate/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -15,9 +15,12 @@
         <module name="eureka" />
         <module name="zuul" />
         <module name="gecco" />
+        <module name="hibernate" />
         <module name="rabbitmq" />
         <module name="quartzDemo" />
+        <module name="demo" />
         <module name="redis" />
+        <module name="schedule" />
         <module name="eureka_client" />
         <module name="eureka_client2" />
         <module name="eureka_client3" />
@@ -26,6 +29,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="demo" target="1.8" />
       <module name="demo (1) (com.eureka)" target="1.8" />
       <module name="dubbo" target="1.8" />
       <module name="eureka" target="1.8" />
@@ -35,6 +39,7 @@
       <module name="eureka_server" target="1.8" />
       <module name="eureka_server2" target="1.8" />
       <module name="gecco" target="1.8" />
+      <module name="hibernate" target="1.8" />
       <module name="mail" target="1.8" />
       <module name="mybatis01" target="1.8" />
       <module name="quartz" target="1.8" />
@@ -50,6 +55,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="demo" options="-parameters" />
       <module name="demo (1) (com.eureka)" options="-parameters" />
       <module name="dubbo" options="-parameters" />
       <module name="eureka" options="-parameters" />
@@ -59,6 +65,7 @@
       <module name="eureka_server" options="-parameters" />
       <module name="eureka_server2" options="-parameters" />
       <module name="gecco" options="-parameters" />
+      <module name="hibernate" options="-parameters" />
       <module name="mail" options="-parameters" />
       <module name="mybatis01" options="-parameters" />
       <module name="quartz" options="-parameters" />
