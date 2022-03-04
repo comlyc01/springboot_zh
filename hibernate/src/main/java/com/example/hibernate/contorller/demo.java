@@ -7,6 +7,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import javax.transaction.Transactional;
+
 public class demo {
     private static SessionFactory sessionFactory;
 
@@ -22,7 +24,7 @@ public class demo {
         }
     }
 
-    private static Integer add(String name,int age,String email){
+    public static Integer add(String name,int age,String email){
         Session session = sessionFactory.openSession();
         Transaction tx = null;
         Integer count = null;
